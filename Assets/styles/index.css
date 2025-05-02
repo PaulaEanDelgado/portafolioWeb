@@ -1,0 +1,17 @@
+body {
+    background-color: #fff5f5; 
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2 {
+    color: #b30000; 
+  }
+  
+  .table-bordered td {
+    background-color: #fffafa;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  

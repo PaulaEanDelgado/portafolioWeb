@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Paula Delgado</title>
+  <link rel="stylesheet" href="../../Assets/styles/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" href="../../Assets/img/Logo_ean.png" type="image/png" />
+</head>
+
+<body>
+  <header class="bg-danger text-white text-center p-4">
+    <h1>¡Hola! Soy Paula Catalina Delgado</h1>
+    <p>Desarrolladora Frontend y estudiante de Ingeniería de Sistemas</p>
+  </header>
+
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+      <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+      <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+      <li class="nav-item"><a class="nav-link" href="#hoja-de-vida">Más sobre mí</a></li>
+    </ul>
+  </nav>
+
+  <main class="container mt-4">
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy desarrolladora frontend y estudiante de Ingeniería de Sistemas en la Universidad EAN. Tengo
+        experiencia desarrollando aplicaciones web con React, Angular, TypeScript y CSS utilizando frameworks
+        como Bootstrap, Tailwind y Angular Material.
+        He participado en proyectos enfocados en visualización de datos, gestión de usuarios y monitoreo de
+        pozos petroleros.
+        Me considero una persona creativa, proactiva y comprometida con el aprendizaje continuo, actualmente
+        fortaleciendo mis habilidades en inglés técnico y tecnologías como .NET y Python.
+      </p>
+      <img src="../../Assets/img/IMG_1203.PNG" alt="Foto de perfil" class="img-thumbnail" width="200" />
+    </section>
+
+    <section id="habilidades" class="mt-5">
+      <h2>Habilidades</h2>
+      <ul id="lista-habilidades"></ul>
+    </section>
+
+    <section id="proyectos" class="mt-5">
+      <h2>Proyectos Realizados</h2>
+      <table class="table table-bordered">
+        <thead class="table-danger">
+          <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Enlace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gestión de una óptica</td>
+            <td>Interfaz para monitoreo de agenda, usuarios, médicos e historia clínica de una óptica.</td>
+            <td><a href="https://github.com/PaulaDC2725" target="_blank">Repositorio</a></td>
+          </tr>
+          <tr>
+            <td>Gestión de gimnasio</td>
+            <td>Interfaz y página web para la gestión y manejo de un gimnasio.</td>
+            <td><a href="https://github.com/PaulaDC2725" target="_blank">Repositorio</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="hoja-de-vida" class="mt-5 text-center">
+      <h2>Descargar Hoja de Vida</h2>
+      <p>Puedes descargar mi hoja de vida en formato PDF haciendo clic en el siguiente botón:</p>
+      <a href="../../Assets/docs/Hoja_de_vida_Paula_Delgado.pdf" class="btn btn-outline-danger"  target="_blank" download>
+        Descargar PDF
+      </a>
+    </section>
+  </main>
+
+  <footer class="bg-danger text-white p-3 mt-4 position-relative">
+    <img src="../../Assets/img/Logo_ean.png" alt="Logo EAN" width="100" class="position-absolute bottom-0 start-0 m-3" />
+  
+    <div class="text-center">
+      <p class="mb-1">&copy; 2025 - Portafolio Paula Delgado</p>
+      <p class="mb-1">
+        <a href="mailto:kimikta45@gmail.com" class="text-white">kimikta45@gmail.com</a> | Bogotá, Colombia
+      </p>
+      <p class="mb-0">
+        <a href="https://linkedin.com/in/pcda27" class="text-white" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/PaulaDC2725" class="text-white" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </footer>
+  
+  
+
+  <script>
+    const habilidades = [
+      "HTML5, CSS3, JavaScript, TypeScript",
+      "React (JavaScript), Angular (TypeScript)",
+      "Bootstrap, Tailwind CSS, Angular Material, Ant Design",
+      "Consumo de APIs REST y visualización de datos",
+      "Gestión de bases de datos SQL y proyectos en PHP",
+      "Git, GitHub y control de versiones"
+    ];
+
+    const lista = document.getElementById("lista-habilidades");
+
+    habilidades.forEach((habilidad) => {
+      const li = document.createElement("li");
+      li.textContent = habilidad;
+      lista.appendChild(li);
+    });
+  </script>
+</body>
+
+</html>
