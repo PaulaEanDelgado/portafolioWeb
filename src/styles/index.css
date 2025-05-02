@@ -1,0 +1,83 @@
+body {
+  background-color: #fff5f5;
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  color: #b30000;
+}
+
+.table-bordered td {
+  background-color: #fffafa;
+}
+
+a {
+  text-decoration: none;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode .navbar {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+.dark-mode .table,
+.dark-mode .table th,
+.dark-mode .table td {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .btn-outline-danger {
+  border-color: #f1f1f1;
+  color: #f1f1f1;
+}
+
+.dark-mode .btn-outline-danger:hover {
+  background-color: #f1f1f1;
+  color: #121212;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+.dark-mode #menu {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1;
+}
+.dark-mode .modal-content {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-footer {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+.dark-mode .modal-body {
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar .nav-link {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar .nav-link:hover {
+  color: #ffc107 !important; /* Un color destacado como amarillo Bootstrap */
+}
